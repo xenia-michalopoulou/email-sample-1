@@ -7,15 +7,44 @@
     <title>Document</title>
     <style>
         body {
-            width: 600px;
+            padding: 0px;
+            margin: 0px;
         }   
 
-        .section-one {
-        }
+       .happy-woman {
+           width: 340px;
+       }
+
+       .column-left-text {
+          width: 50%;
+          padding: 25px;
+       }
+
+       .column-right-image {
+         width: 50%;
+         margin-left: 50px;
+         padding: 25px;
+       }
+
+       .logo {
+           padding: 5px;
+       }
+
+       .food {
+           margin: 10px;
+           width: 70%;
+       }
+
+       .center {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+   
     </style>
 </head>
 <body>
-    <table style="background-color:#eff9f0; text-align:center;">
+    <table class="center" style="background-color:#eff9f0; text-align:center;">
         <tr>
             <td class="section-one">
                 <img class="logo" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food.png" width="140" >
@@ -42,10 +71,30 @@
             </td>
         </tr>
         <tr>
+            <td style="width:100%;padding-right:0px;padding-left:0px;padding-top:20px;padding-bottom:60px;">
+            </td>
+        </tr>
+        <tr>
             <td>
                 <img class="food" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/food_hero.png">
             </td>
         </tr>
+    </table>
+
+    <table style="background-color:white; padding-top: 20px;padding-bottom: 20px;">
+        <tbody>
+            <tr>
+                <td class="column-left-text">
+                    <p>ABOUT NUTRITIST</p>
+                    <p>Care About Nutrition</p>     
+                    <p>For Your Health</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </td>
+                <td class="column-right-image">
+                    <img class="happy-woman" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Afro_happy_girl.png"> 
+                </td>
+            </tr>
+     </tbody>
     </table>
     
 </body>
