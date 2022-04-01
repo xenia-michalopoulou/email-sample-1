@@ -30,7 +30,6 @@
        }
 
        .center {
-        width: 600px;
         margin-left: auto;
         margin-right: auto;
        }
@@ -47,12 +46,6 @@
            text-align:center;
            padding-left: 40px;
            padding-right: 40px;
-       }
-
-       .footer-style {
-        margin: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
        }
 
        .link {
@@ -116,7 +109,7 @@
        
        @media only screen and (min-width: 320px) {
             .wrapper {
-                width: 320px;
+                /* width: 320px; */
             }
 
             .stack {
@@ -135,7 +128,7 @@
     </head>
 
     <body>
-        <table class="center">
+        <table class="center" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
                     <table class="wrapper" style="background-color:#eff9f0; text-align:center;">
@@ -231,9 +224,9 @@
                     </table>
                 </td>
             </tr>
-            <tr style="background-color: black; color: #ffffff;">
+            <tr >
                 <td>
-                    <table class="container footer-style wrapper">
+                    <table class="container wrapper" style="background-color: black; color: #ffffff; width: 100%;">
                         <tr>
                             <td class="stack">
                                 <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food_footer.png" style="width: 100px;">
@@ -246,11 +239,11 @@
                                 <a href="" class="link">Videos</a>
                                 <a href="" class="link">Unsubscribe</a>
                             </td>
-                            <td style="padding-left: 70px;"  class="stack">
+                            <td class="stack">
                                 <p style="padding: 5px;">Contact</p>
                                 <a href="" class="link">Info@company.com</a>
                                 <a href="" class="link">Help Center</a>
-                                <table  class="stack">
+                                <table>
                                     <tr>
                                         <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" style="width:32px; height:32px;"></td>
                                         <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/twitter@2x.png"  style="width:32px; height:32px;"></td>
