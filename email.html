@@ -30,7 +30,6 @@
        }
 
        .center {
-        width: 600px;
         margin-left: auto;
         margin-right: auto;
        }
@@ -47,12 +46,6 @@
            text-align:center;
            padding-left: 40px;
            padding-right: 40px;
-       }
-
-       .footer-style {
-        margin: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
        }
 
        .link {
@@ -112,14 +105,42 @@
          padding-bottom: 7px;
          font-size: 13px;
        }
+
+       
+       @media only screen and (min-width: 320px) {
+            .wrapper {
+                /* width: 320px; */
+            }
+
+            .stack {
+                display: block;
+            }
+        }
+
+       
+        @media only screen and (min-width: 600px) {
+            .wrapper {
+                width: 600px;
+            }
+
+            .stack {
+                display: table-cell;
+            }
+            
+            .container-spacing {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
     </style>
     </head>
 
     <body>
-        <table class="center">
+        <table class="center" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
-                    <table style="background-color:#eff9f0; text-align:center;">
+                    <table class="wrapper" style="background-color:#eff9f0; text-align:center;">
                         <tr>
                             <td class="section-one">
                                 <img class="logo" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food.png" width="120" >
@@ -152,51 +173,51 @@
             </tr>
             <tr>
                 <td>
-                    <table style="background-color:white; padding-top: 20px;padding-bottom: 20px; text-align:center;">
-                            <tr>
-                                <td>
-                                    <p style="color: #528252; font-size: 13px;font-family: Arial; line-height: 120%;font-weight: 600; margin: 0px;"> ABOUT NUTRITIST</p>
-                                    <p class="h3-style">Care About Nutrition</p>     
-                                    <p class="h3-style" >For Your Health</p>      
-                                    <p class="p-style" style="text-align:left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <table class="checkpoint-section">
-                                        <tr>
-                                            <td>
-                                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;">
-                                            </td>
-                                            <td>
-                                                <p class="p-style">Balance Body & Mind</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;"> 
-                                            </td>
-                                            <td>
-                                                <p class="p-style">Workout Routines</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <span class="span-style">Get Started</span>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td class="column-right-image">
-                                    <img class="happy-woman" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Afro_happy_girl.png"> 
-                                </td>
-                            </tr>
+                    <table class="wrapper container-spacing" style="background-color:white; padding-top: 20px;padding-bottom: 20px; text-align:center;">
+                         <tr>
+                            <td colspan="2">
+                                <p style="color: #528252; font-size: 13px;font-family: Arial; line-height: 120%;font-weight: 600; margin: 0px;"> ABOUT NUTRITIST</p>
+                                <p class="h3-style">Care About Nutrition</p>     
+                                <p class="h3-style" >For Your Health</p>      
+                            </td>
+                         </tr>   
+                        <tr>
+                            <td class="stack">
+                                <p class="p-style" style="text-align:left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <table class="checkpoint-section">
+                                    <tr>
+                                        <td>
+                                            <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;">
+                                        </td>
+                                        <td>
+                                            <p class="p-style">Balance Body & Mind</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;"> 
+                                        </td>
+                                        <td>
+                                            <p class="p-style">Workout Routines</p> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="span-style">Get Started</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="column-right-image stack">
+                                <img class="happy-woman" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Afro_happy_girl.png"> 
+                            </td>
+                        </tr>
                     </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <table  class="section-three-gallery" >
+                    <table  class="section-three-gallery wrapper" >
                         <tr>
                             <td style="padding:15px;" colspan="2">
                                 <p class="h2-style">ABOUT NUTRITIST</P>
@@ -204,60 +225,43 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="stack">
                                 <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_2.png"  style="vertical-align: top; padding:7px;">
-                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_3.png" style="padding:7px;">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_4.png" style="padding:7px;">
                             </td>                     
-                            <td>
-                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_4.png"style="padding:7px;">
+                            <td  class="stack">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_3.png"style="padding:7px;">
                                 <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_1.png" style="vertical-align: baseline; padding:7px;">
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr style="background-color: black; color: white;">
+            <tr >
                 <td>
-                    <table class="container">
+                    <table class="container wrapper" style="background-color: black; color: #ffffff; width: 100%;">
                         <tr>
-                            <td>
-                                <table class="footer-style" style="width:100px;">                           
-                                    <tr>
-                                        <td>
-                                            <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food_footer.png" style="width: 100px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <td class="stack">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food_footer.png" style="width: 100px;">
+                                <p style>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </td>
-                            <hr style="color:wheat; margin-bottom:0px; margin-top: 40px;">
-                            <td>
-                                <table class="footer-style">
+                            <td style="padding-right: 15px;" class="stack">
+                                <p style="padding: 5px;">Links</p>
+                                <a href="" class="link">Recipes</a>
+                                <a href="" class="link">Blog</a>
+                                <a href="" class="link">Videos</a>
+                                <a href="" class="link">Unsubscribe</a>
+                            </td>
+                            <td class="stack">
+                                <p style="padding: 5px;">Contact</p>
+                                <a href="" class="link">Info@company.com</a>
+                                <a href="" class="link">Help Center</a>
+                                <table>
                                     <tr>
-                                        <td style="padding-right: 15px;">
-                                            <p style="padding: 5px;">Links</p>
-                                            <a href="" class="link">Recipes</a>
-                                            <a href="" class="link">Blog</a>
-                                            <a href="" class="link">Videos</a>
-                                            <a href="" class="link">Unsubscribe</a>
-                                        </td>
-                                        <td style="padding-left: 70px;">
-                                            <p style="padding: 5px;">Contact</p>
-                                            <a href="" class="link">Info@company.com</a>
-                                            <a href="" class="link">Help Center</a>
-                                            <table>
-                                                <tr>
-                                                    <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" style="width:32px; height:32px;"></td>
-                                                    <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/twitter@2x.png"  style="width:32px; height:32px;"></td>
-                                                    <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/linkedin@2x.png" style="width:32px; height:32px;"></td>
-                                                    <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png"  style="width:32px; height:32px;"></td>
-                                                </tr>
-                                            </table>
-                                        </td>  
+                                        <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" style="width:32px; height:32px;"></td>
+                                        <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/twitter@2x.png"  style="width:32px; height:32px;"></td>
+                                        <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/linkedin@2x.png" style="width:32px; height:32px;"></td>
+                                        <td> <img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png"  style="width:32px; height:32px;"></td>
                                     </tr>
                                 </table>
                             </td>
