@@ -40,24 +40,13 @@
            padding: 5px;
        }
 
-       .small-picture-gallery {
-           margin-right: 20px;
-           margin-left: 20px;
-           margin-top: 10px;
-           margin-bottom: 10px;
-       }
-
-       .big-picture-gallery {
-           margin: 20px;
-           margin-top: 10px;
-           margin-bottom: 10px;
-       }
-       
        .section-three-gallery {
            background-color: #eff9f0;
            margin: 0px;
            width: 100%;
            text-align:center;
+           padding-left: 40px;
+           padding-right: 40px;
        }
 
        .footer-style {
@@ -70,6 +59,7 @@
            display: block;
            color: white;
            text-decoration: none;
+           padding: 5px;
        }
 
        .container {
@@ -120,6 +110,7 @@
          padding-right: 10px;
          padding-top: 7px;
          padding-bottom: 7px;
+         font-size: 13px;
        }
     </style>
     </head>
@@ -130,7 +121,7 @@
                 <td>
                     <table style="background-color:#eff9f0; text-align:center;">
                         <tr>
-                            <td>
+                            <td class="section-one">
                                 <img class="logo" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food.png" width="120" >
                             </td>
                         </tr>
@@ -161,34 +152,34 @@
             </tr>
             <tr>
                 <td>
-                    <table style="background-color:white; padding-top: 20px;padding-bottom: 20px;">
+                    <table style="background-color:white; padding-top: 20px;padding-bottom: 20px; text-align:center;">
                             <tr>
                                 <td>
                                     <p style="color: #528252; font-size: 13px;font-family: Arial; line-height: 120%;font-weight: 600; margin: 0px;"> ABOUT NUTRITIST</p>
                                     <p class="h3-style">Care About Nutrition</p>     
                                     <p class="h3-style" >For Your Health</p>      
-                                    <p class="p-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="p-style" style="text-align:left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <table class="checkpoint-section">
                                         <tr>
                                             <td>
-                                                <img class="icon" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png" style="width:32px; height:32px;">
+                                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;">
                                             </td>
                                             <td>
                                                 <p class="p-style">Balance Body & Mind</p>
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="checkpoint-section">
+                                    <table>
                                         <tr>
                                             <td>
-                                                <img class="icon" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png" style="width:32px; height:32px;"> 
+                                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/check_mark.png"  style="width:32px; height:32px;"> 
                                             </td>
                                             <td>
                                                 <p class="p-style">Workout Routines</p>
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="checkpoint-section">
+                                    <table>
                                         <tr>
                                             <td>
                                                 <span class="span-style">Get Started</span>
@@ -205,27 +196,21 @@
             </tr>
             <tr>
                 <td>
-                    <table  style=" text-align:center;">
+                    <table  class="section-three-gallery" >
                         <tr>
-                            <td>
+                            <td style="padding:15px;" colspan="2">
                                 <p class="h2-style">ABOUT NUTRITIST</P>
                                 <p class="h3-style">Care About Nutrition For Your Health</P>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img class="small-picture-gallery" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_2.png">
-                            </td>
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_2.png"  style="vertical-align: top; padding:7px;">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_3.png" style="padding:7px;">
+                            </td>                     
                             <td>
-                                <img class="big-picture-gallery" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_3.png">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img class="big-picture-gallery" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_4.png">
-                            </td>
-                            <td>
-                                <img class="small-picture-gallery" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_1.png">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_4.png"style="padding:7px;">
+                                <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Food_1.png" style="vertical-align: baseline; padding:7px;">
                             </td>
                         </tr>
                     </table>
@@ -249,18 +234,19 @@
                                     </tr>
                                 </table>
                             </td>
+                            <hr style="color:wheat; margin-bottom:0px; margin-top: 40px;">
                             <td>
                                 <table class="footer-style">
                                     <tr>
                                         <td style="padding-right: 15px;">
-                                            <p>Links</p>
+                                            <p style="padding: 5px;">Links</p>
                                             <a href="" class="link">Recipes</a>
                                             <a href="" class="link">Blog</a>
                                             <a href="" class="link">Videos</a>
                                             <a href="" class="link">Unsubscribe</a>
                                         </td>
                                         <td style="padding-left: 70px;">
-                                            <p>Contact</p>
+                                            <p style="padding: 5px;">Contact</p>
                                             <a href="" class="link">Info@company.com</a>
                                             <a href="" class="link">Help Center</a>
                                             <table>
