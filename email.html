@@ -13,7 +13,7 @@
         }   
 
        .happy-woman {
-           width: 289px;
+           width: 260px;
        }
 
        .column-right-image {
@@ -97,20 +97,29 @@
         }
 
         .span-style {
-        color: white;
-        background-color: #528252;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        font-size: 13px;
-        font-family: Montserrat;
+            color: white;
+            background-color: #528252;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            font-size: 13px;
+            font-family: Montserrat;
+        }
+
+        .desktop-show {
+            display: none;
+        }
+
+        .mobile-show {
+            display: block;
+        }
+
+        .column-left {
+            padding:20px;
         }
 
        @media only screen and (min-width: 320px) {
-            .wrapper {
-                /* width: 320px; */
-            }
 
             .stack {
                 display: block;
@@ -125,6 +134,17 @@
                 font-family: Montserrat;
             }
 
+            .green-button {
+                display: block;
+                width: 100px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                line-height: 100%;
+                border-radius: 4px;
+                font-weight: 600;
+        }
+
             .h2-style {
                 font-size: 19px;
                 font-weight: 610;
@@ -138,6 +158,11 @@
 
             .food{
                 width: 100%;
+                padding: 20px;
+                display: block;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .h3-style{
@@ -160,9 +185,6 @@
 
        
         @media only screen and (min-width: 600px) {
-            .wrapper {
-                width: 600px;
-            }
 
             .stack {
                 display: table-cell;
@@ -175,8 +197,7 @@
 
             
             .food {
-                margin: 10px;
-                width: 70%;
+                width: 70%;              
             }
 
                                         
@@ -200,13 +221,23 @@
             .span-style {
                 padding-left: 10px;
                 padding-right: 10px;
-                padding-top: 7px;
-                padding-bottom: 7px;
-                font-size: 13px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 15px;
                 font-family: Montserrat;
             }
 
+            .desktop-show {
+                display: block;
+            }
 
+            .mobile-show {
+                display: none;
+            }
+
+            .column-left {
+                padding: 0px;
+            }
         }
 
     </style>
@@ -216,7 +247,7 @@
         <table class="center" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
-                    <table class="wrapper" style="background-color:#eff9f0; text-align:center;">
+                    <table style="background-color:#eff9f0; text-align:center;">
                         <tr>
                             <td class="section-one">
                                 <img class="logo" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food.png" width="120" >
@@ -249,16 +280,19 @@
             </tr>
             <tr>
                 <td>
-                    <table class="wrapper container-spacing" style="background-color:white; padding-top: 20px;padding-bottom: 20px; text-align:center;">
+                    <table class="container-spacing" style="background-color:white; padding-top: 20px;padding-bottom: 20px; text-align:center;">
                          <tr>
-                            <td colspan="2" style="text-align:left;">
+                            <td colspan="2" style="text-align:left; padding: 20px;" class="mobile-show">
                                 <p class="h2-style alignment " style="text-align:left;"> ABOUT NUTRITIST</p>
                                 <p class="h3-style alignment">Care About Nutrition</p>     
                                 <p class="h3-style alignment" >For Your Health</p>      
                             </td>
                          </tr>   
                         <tr>
-                            <td class="stack">
+                            <td class="stack column-left">
+                                <p class="h2-style alignment desktop-show" style="text-align:left;"> ABOUT NUTRITIST</p>
+                                <p class="h3-style alignment desktop-show">Care About Nutrition</p>     
+                                <p class="h3-style alignment desktop-show">For Your Health</p>    
                                 <p class="p-style" style="text-align:left; padding-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <table>
                                     <tr>
@@ -278,7 +312,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <span class="span-style">Get Started</span>
+                                <span class="span-style green-button">Get Started</span>
                             </td>
                             <td class="column-right-image stack">
                                 <img class="happy-woman" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Afro_happy_girl.png"> 
@@ -289,7 +323,7 @@
             </tr>
             <tr>
                 <td>
-                    <table  class="section-three-gallery wrapper" >
+                    <table  class="section-three-gallery wrapper" style="padding-top:20px; padding-bottom:20px;" >
                         <tr>
                             <td style="padding:15px;" colspan="2">
                                 <p class="h2-style">ABOUT NUTRITIST</P>
@@ -311,9 +345,9 @@
             </tr>
             <tr >
                 <td>
-                    <table class="container wrapper" style="background-color: black; color: #ffffff; width: 100%;">
+                    <table class="container" style="background-color: black; color: #ffffff; width: 100%;">
                         <tr>
-                            <td class="stack">
+                            <td class="stack" style="width: 180px; padding-right: 30px;">
                                 <img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6451/Logo_food_footer.png" style="width: 100px;">
                                 <p style>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </td>
